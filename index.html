@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1" />  <!-- отображение для мобильных девайсов -->
@@ -7,7 +7,33 @@
       <link href="styles/index.css" rel="stylesheet" />
   </head>
   <body>
-    <img class="thumbnail" src="images/thumnail-1.webp" alt="Blizzcon Audience Reaction">
-    <input class="search-bar" type="text" placeholder="Search">
+    <input class="search-bar" type="text" placeholder="Search" aria-label="">
+    <!--    Первое видео-->
+    <div class="video-preview">
+        <!-- Это часть где размещена только картинка видео-->
+        <div>
+            <img class="thumbnail" src="images/thumnail-1.webp" alt="Blizzcon Audience Reaction">
+        </div>
+        <!-- Это часть где размещены описание видео и картинка автора канала-->
+        <div>
+            <!-- Это часть где размещена только картинка автора канала-->
+            <div class="channel-picture">
+                <img class="profile-picture" src="channel-pictures/channel-1.jpg" alt="World of Warcraft Channel icon">
+            </div>
+            <!-- Это часть где размещены описание видео-->
+            <div class="video-info">
+                <p class="video-title">Blizzcon Audience Reaction</p>
+                <p>World of Warcraft</p>
+                <p>1,1 млн просмотров &#183; 3 года назад</p>
+            </div>
+        </div>
+    </div>
+    <!--    Второе видео-->
+    <div class="video-preview">
+        <img class="thumbnail" src="images/thumnail-2.webp" alt="Варкрафт 2 - продолжению быть?">
+        <p class="video-title">Варкрафт 2 - продолжению быть?</p>
+        <p>НеСпойлер</p>
+        <p>241 тыс. просмотров &#183; 6 дней назад</p>
+    </div>
   </body>
 </html>
