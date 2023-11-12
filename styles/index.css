@@ -1,41 +1,65 @@
-* {
-    font-family: Roboto, Arial, sans-serif;
+p {
+    font-family: "Roboto", Arial, sans-serif;
+    margin: 1px;
 }
 
-.thumbnail {
-    width: 300px;
-    display: block;
+.top-panel {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: row;  /* Указывает направление гибкого штриха на строку в данном случае */
+    height: 56px;
+    justify-content: space-between;  /* Равномерно выравнивает по горизонтали */
 }
 
 .search-bar {
     cursor: text;
     width: 500px;
+    padding: 0 4px 0 16px;
     font-size: 20px;
     border-radius: 40px 0 0 40px;
     border-width: 1px;
     display: block;
 }
 
-.channel-picture {
-    display: inline-block;
-    width: 36px;
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 10px;
+    column-gap: 18px; /*Расстояние между столбцами*/
+    row-gap: 40px;  /*Расстояние между строками*/
 }
+
+.thumbnail {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.thumbnail-row {
+    margin-bottom: 10px;
+}
+
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 48px 1fr;
+}
+
 .profile-picture{
     width: 36px;
+    border-radius: 50px;
 }
 
 .video-title {
-    font-size: 16px;
+    font-size: 18px;
+    margin: 0 0 8px 0;
+    font-weight: 500;
+    line-height: 20px;  /* Расстояние между строками */
 }
 
-.video-info {
-    display: inline-block;
-    width: 200px;
+.video-author, .video-stats {
+    font-size: 15px;
+    color: #606060FF;
 }
 
-.video-preview {
-    width: 300px;
-    display: inline-block;
-    margin: 8px;
-    vertical-align: top;
+.video-author {
+    margin-bottom: 4px;
 }

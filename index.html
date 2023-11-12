@@ -5,35 +5,226 @@
       <meta name="viewport" content="width=device-width, initial-scale=1" />  <!-- отображение для мобильных девайсов -->
       <title>Youtube-clone</title>
       <link href="styles/index.css" rel="stylesheet" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <input class="search-bar" type="text" placeholder="Search" aria-label="">
-    <!--    Первое видео-->
-    <div class="video-preview">
-        <!-- Это часть где размещена только картинка видео-->
+    <div class="top-panel">
         <div>
-            <img class="thumbnail" src="images/thumnail-1.webp" alt="Blizzcon Audience Reaction">
+
         </div>
-        <!-- Это часть где размещены описание видео и картинка автора канала-->
         <div>
-            <!-- Это часть где размещена только картинка автора канала-->
-            <div class="channel-picture">
-                <img class="profile-picture" src="channel-pictures/channel-1.jpg" alt="World of Warcraft Channel icon">
+            <input class="search-bar" type="text" placeholder="Search" aria-label="">
+        </div>
+        <div>
+
+        </div>
+    </div>
+
+    <div class="video-grid">
+        <!--    Первое видео-->
+        <div class="video-preview">
+            <!-- Это часть где размещена только картинка видео-->
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="images/thumnail-1.webp" alt="Blizzcon Audience Reaction">
             </div>
-            <!-- Это часть где размещены описание видео-->
-            <div class="video-info">
-                <p class="video-title">Blizzcon Audience Reaction</p>
-                <p>World of Warcraft</p>
-                <p>1,1 млн просмотров &#183; 3 года назад</p>
+            <!-- Это часть где размещены описание видео и картинка автора канала-->
+            <div class="video-info-grid">
+                <!-- Это часть где размещена только картинка автора канала-->
+                <div class="channel-picture">
+                    <img class="profile-picture" src="channel-pictures/channel-1.jpg" alt="World of Warcraft Channel icon">
+                </div>
+                <!-- Это часть где размещены описание видео-->
+                <div class="video-info">
+                    <p class="video-title">Blizzcon Audience Reaction</p>
+                    <p class="video-author">World of Warcraft</p>
+                    <p class="video-stats">1,1 млн просмотров &#183; 3 года назад</p>
+                </div>
+            </div>
+        </div>
+        <!--    Второе видео-->
+        <div class="video-preview">
+            <!-- Это часть где размещена только картинка видео-->
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="images/thumnail-2.webp" alt="Варкрафт 2 - продолжению быть?">
+            </div>
+            <!-- Это часть где размещены описание видео и картинка автора канала-->
+            <div class="video-info-grid">
+                <!-- Это часть где размещена только картинка автора канала-->
+                <div class="channel-picture">
+                    <img class="profile-picture" src="https://yt3.ggpht.com/ytc/APkrFKYZQgSTrGt4WANlU_GYfWNUWrJCntyu4p_HqdVTNA=s68-c-k-c0x00ffffff-no-rj" alt="НеСпойлер Channel icon">
+                </div>
+                <!-- Это часть где размещены описание видео-->
+                <div class="video-info">
+                    <p class="video-title">Blizzcon Audience Reaction</p>
+                    <p class="video-author">НеСпойлер</p>
+                    <p class="video-stats">241 тыс. просмотров &#183; 6 дней назад</p>
+                </div>
+            </div>
+        </div>
+        <!--    Третье видео-->
+        <div class="video-preview">
+            <!-- Это часть где размещена только картинка видео-->
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="https://i.ytimg.com/vi/2hBAfZB9sfg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD7Hz2A-Tbfl_oX3P9fcCTbpvUW-g" alt="Ковбойский фильм Чарльза Бронсона">
+            </div>
+            <!-- Это часть где размещены описание видео и картинка автора канала-->
+            <div class="video-info-grid">
+                <!-- Это часть где размещена только картинка автора канала-->
+                <div class="channel-picture">
+                    <img class="profile-picture" src="https://yt3.ggpht.com/vhol3rfAeDSt1tFWGSvHocX0Uj_9YD7mRS0t6sSJyX4QvshEJxzJt8gRAZp32uv6VBhluNzOEQ=s68-c-k-c0x00ffffff-no-rj" alt="Топ русских вестерн фильмов">
+                </div>
+                <!-- Это часть где размещены описание видео-->
+                <div class="video-info">
+                    <p class="video-title">Ковбойский фильм Чарльза Бронсона</p>
+                    <p class="video-author">Топ русских вестерн фильмов</p>
+                    <p class="video-stats">526 тыс. просмотров &#183; 3 дня назад</p>
+                </div>
+            </div>
+        </div>
+        <!--    Четвертое видео-->
+        <div class="video-preview">
+            <!-- Это часть где размещена только картинка видео-->
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="https://i.ytimg.com/vi/8yU_Wxel_pc/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhyIEsoNjAP&rs=AOn4CLBy6EtGHG3B0-WUS6DK6ZL75HrWgQ" alt="Hufbearbeitung in der Herde - Das Prinzip der Gegenwart -">
+            </div>
+            <!-- Это часть где размещены описание видео и картинка автора канала-->
+            <div class="video-info-grid">
+                <!-- Это часть где размещена только картинка автора канала-->
+                <div class="channel-picture">
+                    <img class="profile-picture" src="https://yt3.ggpht.com/_T7WB1YtpLTgv7tE4sdiHV3Z1rd7h_ZmCSW2lDG9oNnrwGJ17VpOZv46YUf74yBNzPoUA65UXdM=s68-c-k-c0x00ffffff-no-rj" alt="Being Technozz
+ Channel icon">
+                </div>
+                <!-- Это часть где размещены описание видео-->
+                <div class="video-info">
+                    <p class="video-title">Hufbearbeitung in der Herde - Das Prinzip der Gegenwart</p>
+                    <p class="video-author">Being Technozz</p>
+                    <p class="video-stats">130 тыс. просмотров &#183; 1 день назад</p>
+                </div>
+            </div>
+        </div>
+        <!--    Пятое видео-->
+        <div class="video-preview">
+            <!-- Это часть где размещена только картинка видео-->
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="https://i.ytimg.com/vi/jBqW9MqQ6x4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCZjsKGPJ9UFl9hdKeZyHMf1vSaYg" alt="Riding Out an Epic Snowstorm Inside a Cozy Homemade Truck">
+            </div>
+            <!-- Это часть где размещены описание видео и картинка автора канала-->
+            <div class="video-info-grid">
+                <!-- Это часть где размещена только картинка автора канала-->
+                <div class="channel-picture">
+                    <img class="profile-picture" src="https://yt3.ggpht.com/ytc/APkrFKYml1xANsNlkp6z9OJnU9wF3y_iCAgz1VgK554F=s68-c-k-c0x00ffffff-no-rj" alt="Truck House Life Channel icon">
+                </div>
+                <!-- Это часть где размещены описание видео-->
+                <div class="video-info">
+                    <p class="video-title">Riding Out an Epic Snowstorm Inside a Cozy Homemade Truck</p>
+                    <p class="video-author">Truck House Life</p>
+                    <p class="video-stats">9,7 млн просмотров &#183; 2 месяца назад</p>
+                </div>
+            </div>
+        </div>
+        <!--    Шестое видео-->
+        <div class="video-preview">
+            <!-- Это часть где размещена только картинка видео-->
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="https://i.ytimg.com/vi/seoeYYzjGkw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCb3u7ZzPYooCzgDwGMCwZwkShNYQ" alt="Шум дождя">
+            </div>
+            <!-- Это часть где размещены описание видео и картинка автора канала-->
+            <div class="video-info-grid">
+                <!-- Это часть где размещена только картинка автора канала-->
+                <div class="channel-picture">
+                    <img class="profile-picture" src="https://yt3.ggpht.com/ytc/APkrFKa2FDiLWyxDQjPqRoseXBVscd4BSz4JAMH84l0D=s68-c-k-c0x00ffffff-no-rj" alt="Danny Louis Channel icon">
+                </div>
+                <!-- Это часть где размещены описание видео-->
+                <div class="video-info">
+                    <p class="video-title">Шум дождя</p>
+                    <p class="video-author">Danny Louis</p>
+                    <p class="video-stats">61 млн просмотров &#183; 1 год назад</p>
+                </div>
+            </div>
+        </div>
+        <!--    Седьмое видео-->
+        <div class="video-preview">
+            <!-- Это часть где размещена только картинка видео-->
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="https://i.ytimg.com/vi/0fIvvG6t1GU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCVIG9cUfrOUcdyo8EO1MPEn_v9bQ" alt="Поразительные Факты о Космосе">
+            </div>
+            <!-- Это часть где размещены описание видео и картинка автора канала-->
+            <div class="video-info-grid">
+                <!-- Это часть где размещена только картинка автора канала-->
+                <div class="channel-picture">
+                    <img class="profile-picture" src="https://yt3.ggpht.com/ytc/APkrFKa2n0dBBTpfvQdOVhuyIhUpn74Mxn_FxfSAZExzmQ=s68-c-k-c0x00ffffff-no-rj" alt="WTFакт Channel icon">
+                </div>
+                <!-- Это часть где размещены описание видео-->
+                <div class="video-info">
+                    <p class="video-title">Поразительные Факты о Космосе</p>
+                    <p class="video-author">WTFакт</p>
+                    <p class="video-stats">1,9 млн просмотров &#183; 8 лет назад</p>
+                </div>
+            </div>
+        </div>
+        <!--    Восьмое видео-->
+        <div class="video-preview">
+            <!-- Это часть где размещена только картинка видео-->
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="https://i.ytimg.com/vi/NX41As1_4-c/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAHslQgFGTzC5luELAz6uPw13v04A" alt="Honda Activa 125 l Activa 125 E20 & OBD2 Mode">
+            </div>
+            <!-- Это часть где размещены описание видео и картинка автора канала-->
+            <div class="video-info-grid">
+                <!-- Это часть где размещена только картинка автора канала-->
+                <div class="channel-picture">
+                    <img class="profile-picture" src="https://yt3.ggpht.com/FGKr0zgq8x-EELMzyZ07EyKvR74pzFg3rx5HImxJB0RXcA5ejPETwF3lpNkEF6TsLXhR0CBI9A=s68-c-k-c0x00ffffff-no-rj" alt="GOVIND AUTO Channel icon">
+                </div>
+                <!-- Это часть где размещены описание видео-->
+                <div class="video-info">
+                    <p class="video-title">Honda Activa 125 l Activa 125 E20 & OBD2 Mode</p>
+                    <p class="video-author">GOVIND AUTO</p>
+                    <p class="video-stats">164 просмотра &#183; 2 дня назад</p>
+                </div>
+            </div>
+        </div>
+        <!--    Девятое видео-->
+        <div class="video-preview">
+            <!-- Это часть где размещена только картинка видео-->
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="https://i.ytimg.com/vi/VRosMb68G04/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBbIMR0smGhi30BkFFf4sKeVskoiQ" alt="Приключения Захватывающий фильм ЛЕГЕНДА">
+            </div>
+            <!-- Это часть где размещены описание видео и картинка автора канала-->
+            <div class="video-info-grid">
+                <!-- Это часть где размещена только картинка автора канала-->
+                <div class="channel-picture">
+                    <img class="profile-picture" src="https://yt3.ggpht.com/ivhfpU2o3KRtrucSsXj8PVXQcEQ9QJI6DbatatjzZwrktUFM0EgPEp1nkanz3eSuxd_cvVMVZnA=s68-c-k-c0x00ffffff-no-rj" alt="Твой онлайн кинотеатр Channel icon">
+                </div>
+                <!-- Это часть где размещены описание видео-->
+                <div class="video-info">
+                    <p class="video-title">Приключения Захватывающий фильм ЛЕГЕНДА</p>
+                    <p class="video-author">Твой онлайн кинотеатр</p>
+                    <p class="video-stats">1,5 млн просмотров &#183; 7 дней назад</p>
+                </div>
+            </div>
+        </div>
+        <!--    Десятое видео-->
+        <div class="video-preview">
+            <!-- Это часть где размещена только картинка видео-->
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="https://i.ytimg.com/vi/8CctZp-Pdlc/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB0gaAAuADigIMCAAQARhyIEMoTTAP&rs=AOn4CLC6X4jBiX7Jk4X_KSGVGsaqgO2PFQ" alt="Второй любимый мой номер от @ComedyClubRussia">
+            </div>
+            <!-- Это часть где размещены описание видео и картинка автора канала-->
+            <div class="video-info-grid">
+                <!-- Это часть где размещена только картинка автора канала-->
+                <div class="channel-picture">
+                    <img class="profile-picture" src="https://yt3.ggpht.com/ytc/APkrFKZFnkV2iZCQtvikQyDj813EaUWhsm48zzXgWWeuxw=s68-c-k-c0x00ffffff-no-rj" alt="Дмитрий Запрягаев Channel icon">
+                </div>
+                <!-- Это часть где размещены описание видео-->
+                <div class="video-info">
+                    <p class="video-title">Второй любимый мой номер от @ComedyClubRussia</p>
+                    <p class="video-author">Дмитрий Запрягаев</p>
+                    <p class="video-stats">563 тыс. просмотров &#183; 10 дней назад</p>
+                </div>
             </div>
         </div>
     </div>
-    <!--    Второе видео-->
-    <div class="video-preview">
-        <img class="thumbnail" src="images/thumnail-2.webp" alt="Варкрафт 2 - продолжению быть?">
-        <p class="video-title">Варкрафт 2 - продолжению быть?</p>
-        <p>НеСпойлер</p>
-        <p>241 тыс. просмотров &#183; 6 дней назад</p>
-    </div>
+
   </body>
 </html>
