@@ -1,0 +1,33 @@
+.header {
+    padding: 0 16px;
+    height: 56px;
+    display: flex;
+    flex-direction: row;  /* Указывает направление гибкого штриха на строку в данном случае */
+    justify-content: space-between;  /* Равномерно выравнивает по горизонтали */
+    align-items: center;  /* Выравнивает по вертикали */
+}
+
+.left-section{
+    width: 169px;
+}
+
+.middle-section {
+    /*flex: 1;  !* Указывает какое пространство займет эелмент (1 значит всё оставшееся) *!*/
+    flex-basis: 732px;
+    flex-shrink: 1;
+}
+
+.right-section {
+    width: 225px;
+}
+
+.search-bar {
+    cursor: text;
+    height: 24px;
+    width: 484px;
+    padding: 0 4px 0 16px;
+    font-size: 20px;
+    border-radius: 40px 0 0 40px;
+    border-width: 1px;
+    /*display: block;*/
+}
