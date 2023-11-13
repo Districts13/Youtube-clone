@@ -5,6 +5,19 @@
     column-gap: 18px; /*Расстояние между столбцами*/
     row-gap: 40px;  /*Расстояние между строками*/
 }
+@media (max-width: 750px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 751px) and (max-width: 999px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+.thumbnail-row, .channel-picture, .video-author {
+    cursor: pointer;
+}
 
 .thumbnail {
     width: 100%;
@@ -13,6 +26,7 @@
 
 .thumbnail-row {
     margin-bottom: 10px;
+    position: relative;
 }
 
 .video-info-grid{
@@ -37,6 +51,23 @@
     color: #606060FF;
 }
 
+a.video-author {
+    text-decoration: none;
+}
+
 .video-author {
     margin-bottom: 4px;
+}
+
+.video-time {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 2px 5px;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 7px;
 }
